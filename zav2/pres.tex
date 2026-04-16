@@ -1,0 +1,114 @@
+\PassOptionsToPackage{unicode}{hyperref} 
+\documentclass{beamer}
+
+% --- Налаштування мови та шрифтів ---
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ukrainian]{babel}
+\usepackage{graphicx}
+
+% Фікс для математичних шрифтів та чіткості
+\usefonttheme[onlymath]{serif} 
+
+% --- ТЕМА ТА КОЛЬОРИ ---
+\usetheme{CambridgeUS}
+\usecolortheme{dolphin} 
+
+% --- НАЛАШТУВАННЯ ЯСКРАВОСТІ РАМОК (БЛОКІВ) ---
+\setbeamercolor{block title}{fg=white, bg=blue!80!black}
+\setbeamercolor{block body}{fg=black, bg=blue!10}
+\setbeamercolor{block title example}{fg=white, bg=green!50!black}
+\setbeamercolor{block body example}{fg=black, bg=green!10}
+\setbeamercolor{block title alert}{fg=white, bg=red!70!black}
+\setbeamercolor{block body alert}{fg=black, bg=red!10}
+
+\setbeamercolor{normal text}{fg=black}
+\setbeamerfont{block title}{series=\bfseries}
+
+% --- НАЛАШТУВАННЯ ПІДПИСІВ ---
+\setbeamertemplate{caption}[numbered] 
+\setbeamertemplate{caption label separator}{. } 
+\addto\captionsukrainian{\renewcommand{\figurename}{Рис.}}
+
+% --- ДАНІ ТИТУЛЬНОГО СЛАЙДА 
+% У квадратних дужках [...] пишіть коротко, у фігурних {...} — повно
+\title[Теорема Піфагора]{Застосування теореми Піфагора}
+\subtitle{Геометрія та її практичне значення}
+\author[Прізвище І.П.]{ Прізвище Ім'я По батькові}
+\institute[ФМФ]{Факультет математики, фізики та комп'ютерних наук}
+\date{\today}
+
+\begin{document}
+
+% 1. ТИТУЛЬНИЙ АРКУШ
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% 2. ЗМІСТ
+\begin{frame}{План презентації}
+    \tableofcontents
+\end{frame}
+
+% 3. СПИСКИ (Поступова поява)
+\section{Історична довідка}
+\begin{frame}{Хто такий Піфагор?}
+    \begin{itemize}
+        \item<1-> Давньогрецький філософ та математик.
+        \item<2-> Засновник релігійно-філософської школи піфагорійців.
+        \item<3-> \textbf{Основний здобуток:} Доведення знаменитої теореми.
+    \end{itemize}
+\end{frame}
+
+% 4. МАТЕМАТИКА ТА ЯСКРАВІ РАМКИ
+\section{Теоретичні основи}
+\begin{frame}{Формулювання теореми}
+    \begin{block}{Визначення}
+        У прямокутному трикутнику квадрат гіпотенузи дорівнює сумі квадратів катетів.
+    \end{block}
+
+    \begin{exampleblock}{Основна формула}
+        \[ a^2 + b^2 = c^2 \]
+    \end{exampleblock}
+    
+    \begin{alertblock}{Увага!}
+        Тільки для трикутників з прямим кутом ($90^\circ$).
+    \end{alertblock}
+\end{frame}
+
+% 5. ГРАФІКА ТА КОЛОНКИ
+\section{Візуалізація}
+\begin{frame}{Графічна інтерпретація}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \textbf{Єгипетський трикутник:}
+            \begin{itemize}
+                \item $a = 3, b = 4, c = 5$
+                \item<2-> $9 + 16 = 25$
+            \end{itemize}
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            \centering
+            \begin{figure}
+                \includegraphics[width=0.8\textwidth]{example-image}
+                \caption{Схема трикутника}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% 6. ВИСНОВОК
+\section{Висновки}
+\begin{frame}{Практичне значення}
+    \begin{enumerate}
+        \item Будівництво та архітектура.
+        \item Навігація та картографія.
+        \item Астрономія.
+    \end{enumerate}
+    \vspace{0.5cm}
+    \centering
+    \textbf{\Large Дякую за увагу!}
+\end{frame}
+
+\end{document}
